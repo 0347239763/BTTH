@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css  ">
+    <title>Website khoa CNTT</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    body {
+        width: 1300px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #header {
+        line-height: 40px;
+    }
+
+    h1 {
+        color: rgb(26, 168, 235);
+    }
+
+    #menu {
+        height: 80px;
+        position: -webkit-sticky;
+        position: sticky;
+        width: 1320px;
+    }
+
+    #menu a {
+        color: white;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    #menu ul {
+        list-style-type: none;
+        background-color: black;
+    }
+
+    #menu>ul>li {
+        display: inline-block;
+        width: 150px;
+        position: relative;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .ltk {
+        position: absolute;
+        display: none;
+    }
+
+    .ltk li {
+        font-size: 14px;
+        padding-left: 10px;
+        line-height: 40px;
+        width: 180px;
+        text-align: left;
+        color: white;
+    }
+
+    .ltk>li {
+        position: relative;
+    }
+
+    .ltk li:hover .ltk1 {
+        display: block;
+    }
+
+    .ltk1 {
+        display: none;
+        position: absolute;
+        right: -180px;
+        top: 0px;
+    }
+
+    .ltk1 li {
+        font-size: 14px;
+        padding-left: 10px;
+        line-height: 40px;
+        width: 180px;
+        text-align: left;
+    }
+
+    #menu ul li:hover {
+        background-color: yellowgreen;
+    }
+
+    #menu ul li:hover .ltk {
+        display: block;
+        position: absolute;
+    }
+
+    #slideshow img {
+        width: 1320px;
+        height: 300px;
+    }
+
+    #content-left {
+        width: 980px;
+        height: 1150px;
+        float: left;
+    }
+
+    #content-right {
+        width: 300px;
+        height: 1150px;
+        float: left;
+        margin-left: 20px;
+    }
+
+    #content-left-u {
+        width: 980px;
+        height: 550px;
+        float: left;
+    }
+
+    #content-left-u a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #content-left-d {
+        width: 980px;
+        height: 500px;
+        float: left;
+    }
+
+    #content-left-d a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #content-right-u {
+        width: 300px;
+        height: 550px;
+        float: left;
+        margin-left: 20px;
+    }
+
+    #content-right-u a {
+        text-decoration: none;
+        color: black;
+        list-style-type: none;
+    }
+
+    #content-right-d {
+        width: 300px;
+        height: 500px;
+        float: left;
+        margin-left: 20px;
+    }
+
+    #content-right-d a {
+        text-decoration: none;
+        color: black;
+        list-style-type: none;
+    }
+
+    #footer {
+        width: 1320px;
+        height: 100px;
+        background-color: rgba(202, 196, 196, 0.952);
+        margin-top: 20px;
+        float: left;
+        padding: 35px;
+        text-align: center;
+        font-size: 17px;
+    }
+
+    .hocvien {
+        width: 100%;
+        height: 50px;
+        background-color: red;
+        color: white;
+        padding: 15px 70px;
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+    .sinhvien {
+        width: 100%;
+        height: 50px;
+        background-color: rgb(94, 206, 240);
+        color: white;
+        padding: 15px 70px;
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+    .vanban {
+        width: 100%;
+        height: 50px;
+        background-color: rgb(241, 143, 50);
+        color: white;
+        padding: 15px 70px;
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+    .hoidap {
+        width: 100%;
+        height: 50px;
+        background-color: rgb(51, 192, 9);
+        color: white;
+        padding: 15px 70px;
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+    .lienhe {
+        width: 100%;
+        height: 50px;
+        background-color: rgb(184, 5, 219);
+        color: white;
+        padding: 15px 70px;
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+    .lienket {
+        width: 100%;
+        height: 50px;
+        background-color: rgb(118, 162, 255);
+        color: white;
+        padding: 15px 70px;
+        margin-top: 10px;
+        font-size: 20px;
+    }
+    #content-left h3{
+        width: 250px;
+        padding: 5px 25px;
+        height: 30px;
+    }
+    .new{
+        width:480px;
+        line-height: 30px;
+        margin-left: 20px;
+        float: left;
+        font-size: 17px;
+    }
+    .new1{
+        width:100%;
+        height:100px;
+        margin-top: 5px;
+    }
+    .new1 img{
+        float: left;
+        width:100px;
+        height:80px;
+    }
+    .activites img{
+        width: 470px;
+        height: 250px;
+    }
+</style>
+
+<body>
+    <div id="frame">
+        <div id="header">
+            <div id="name">
+                <span>TRƯỜNG ĐẠI HỌC SƯ PHẠM KĨ THUẬT HƯNG YÊN</span>
+                <h1>KHOA CÔNG NGHỆ THÔNG TIN</h1>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li>
+                        <a href="#">Trang chủ</a>
+                    </li>
+                    <li>
+                        <a href="#">Giới thiệu</a>
+                    </li>
+                    <li>
+                        <a href="#">Bộ môn - Trung tâm</a>
+                        <ul class="ltk">
+                            <li>
+                                <a href="#">BM Công Nghệ Phần Mềm</a>
+                            </li>
+                            <li>
+                                <a href="#">BM Kĩ Thuật Máy Tính</a>
+                            </li>
+                            <li>
+                                <a href="#">BM Mạng Máy Tính & Truyền Thông</a>
+                            </li>
+                            <li>
+                                <a href="#">Trung Tâm Trí Tuệ Nhân Tạo</a>
+                            </li>
+                            <li>
+                                <a href="#">Trung Tâm Phát Triển Phần Mềm</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Đào tạo</a>
+                        <ul class="ltk">
+                            <li>
+                                <a href="#">Sau đại học</a>
+                            </li>
+                            <li>
+                                <a href="#">Đại học chính quy</a>
+                                <ul class="ltk1">
+                                    <li>
+                                        <a href="#">Đi làm</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> Thất nghiệp</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Đại học liên thông</a>
+                            </li>
+                            <li>
+                                <a href="#"> Bồi dưỡng ngắn hạn</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"> Nghiên cứu khoa học</a>
+                    </li>
+                    <li>
+                        <a href="#">Tin tức</a>
+                    </li>
+                    <li>
+                        <a href="#"> Sự kiện</a>
+                    </li>
+                    <li>
+                        <a href="#"> Thông báo</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="content">
+            <div id="slideshow">
+                <a href="#"> <img src="slideshow.PNG" alt="Lỗi"></a>
+            </div>
+            <div id="content-left">
+                <div id="content-left-u">
+                    <h3 style="background-color: red;">
+                        <a href="#">Tin tức & sự kiện</a>
+                    </h3>
+                    <hr style="background-color: red;height: 4px;">
+                    <div style="margin-top: 20px;">
+                        <div style="width:480px;line-height: 30px; float: left;">
+                            <a href="#"><img src="moi.PNG" alt="Lỗi" width="470px" height="300px"></a>
+                            <p>
+                                <b>Khoa công nghệ thông tin tổ chức sinh nhật cho các thầy cô sinh trong tháng 2</b>
+                            </p>
+                            <p>
+                                Hôm nay ngày 20/02/2020, khoa công nghệ thông tin vui mừng tổ chức sinh nhật cho các
+                                thầy cô
+                                có ngày sinh trong tháng 2, thầy Phạm Minh Chuẩn (20/02) và thầy Chu Bá Thành (22/02).
+                            </p>
+                        </div>
+                        <div class="new">
+                            <div>
+                                <div class="new1">
+                                    <img src="moi.PNG" alt="lỗi">
+                                    <p>
+                                        Lễ bảo vệ luận văn thạc sỹ chuyên ngành CNTT khóa 7
+                                    </p>
+                                </div>
+                                <hr>
+                                <div class="new1">
+                                    <img src="moi.PNG" alt="lỗi" >
+                                    <p>
+                                        Trường ĐH SPKT Hưng Yên vinh dự trong top 30 trường Đại học Việt Nam có công bố
+                                        quốc
+                                        tế nhiều nhất
+                                    </p>
+                                </div>
+                                <hr>
+                                <div class="new1">
+                                    <img src="moi.PNG" alt="lỗi" >
+                                    <p>
+                                        Lễ bảo vệ luận văn thạc sỹ chuyên ngành CNTT khóa 7
+                                    </p>
+                                </div>
+                                <hr>
+                                <div class="new1">
+                                    <img src="moi.PNG" alt="lỗi">
+                                    <p>
+                                        Trường ĐH SPKT Hưng Yên vinh dự trong top 30 trường Đại học Việt Nam có ông bố
+                                        quốc 
+                                        tế nhiều nhất
+                                    </p>
+                                </div>
+                                <hr>
+                                <div style="text-align: right;margin-top: 5px;">
+                                    <b>Xem thêm</b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="content-left-d">
+                    <h3 style="background-color: rgb(247, 141, 21);">
+                        <a href="#">Hội thi sinh viên</a>
+                    </h3>
+                    <hr style="background-color: rgb(247, 141, 21);height: 4px;">
+                    <div class="activites">
+                        <div style="float: left;">
+                            <div  style="color: green;text-align: center;font-size: 24px;">
+                                <b>VUI CÙNG IT</b>                               
+                            </div>
+                            <img src="moi.PNG" alt="Lỗi">
+                        </div>
+                        <div>
+                            <div style="color: rgb(22, 166, 202);text-align: center;font-size: 24px;">
+                                <b> OLYMPIC TIN HỌC</b>
+                            </div>
+                            <img src="moi.PNG" alt="Lỗi">
+                        </div>
+                        <div style="float: left;">
+                            <div style="color: rgb(22, 166, 202);text-align: center;font-size: 24px;">
+                                <b>VĂN NGHỆ - THỂ THAO</b>      
+                            </div>
+                            <img src="moi.PNG" alt="Lỗi">
+                        </div>
+                        <div>
+                            <div style="color: green;text-align: center;font-size: 24px;">
+                                <b>NGHIÊN CỨU KHOA HỌC</b>                      
+                            </div>
+                            <img src="moi.PNG" alt="Lỗi">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="content-right">
+                <div id="content-right-u">
+                    <h3 style="background-color: rgb(0, 217, 255);padding: 5px 25px;">
+                        <a href="#"><span >Thông báo</span></a>
+                    </h3>
+                    <div>
+                        <ul style="margin-left: 20px;line-height: 30px;">
+                            <li>
+                                <a href="#">Quyết định công nhận tốt ngiệp ĐHLT (từ CĐN)</a>
+                            </li>
+                            <li>
+                                <a href="#">Quyết định công nhận tốt ngiệp ĐHLT (từ CĐN)</a>
+                            </li>
+                            <li>
+                                <a href="#">Quyết định công nhận tốt ngiệp ĐHLT (từ CĐN)</a>
+                            </li>
+                            <li>
+                                <a href="#">Quyết định công nhận tốt ngiệp ĐHLT (từ CĐN)</a>
+                            </li>
+                            <li>
+                                <a href="#">Quyết định công nhận tốt ngiệp ĐHLT (từ CĐN)</a>
+                            </li>
+                            <li>
+                                <a href="#">Quyết định công nhận tốt ngiệp ĐHLT (từ CĐN)</a>
+                            </li>
+                            <li>
+                                <a href="#">Quyết định công nhận tốt ngiệp ĐHLT (từ CĐN)</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="content-right-d">
+                    <div>
+                        <div class="hocvien">
+                            <a href="#">Học viên cao học</a>
+                        </div>
+                        <div class="sinhvien">
+                            <a href="#">Sinh viên</a>
+                        </div>
+                        <div class="vanban">
+                            <a href="#">Văn bản</a>
+                        </div>
+                        <div class="hoidap">
+                            <a href="#">Hỏi đáp</a>
+                        </div>
+                        <div class="lienhe">
+                            <a href="#">Liên hệ</a>
+                        </div>
+                        <div>
+                            <div class="lienket">
+                                <a href="#">Liên kết</a>
+                            </div>
+                            <ul style="line-height: 50px;margin-left: 20px;font-size: 17px;">
+                                <li>
+                                    <a href="#">Bộ môn công nghệ phần mềm</a>
+                                </li>
+                                <li>
+                                    <a href="#">Bộ môn mạng máy tính và truyền thông</a>
+                                </li>
+                                <li>
+                                    <a href="#">Bộ môn kỹ thuật máy tính</a>
+                                </li>
+                                <li>
+                                    <a href="#">Trung tâm Hưng Yên</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <p>
+                Bản quyền thuộc về Khoa CNTT<br>Trường Đại học Sư phạm kỹ thuật Hưng Yên
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

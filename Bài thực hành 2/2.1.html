@@ -7,27 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang cá nhân</title>
     <style>
+        body {
+        width: 1000px;
+        margin-right: auto;
+        margin-left: auto;
+    }
         .banner {
-            width: 60%;
+            width: 910px;
             height: 150px;
             border: 1px solid;
             display: flex;
-            margin-left: 20%;
         }
         .content-left{
-            width: 45%;
+            width: 680px;
             height: 400px;
             border: 1px solid;
-            margin-top: 1%;
-            margin-left: 20%;
+            margin-top: 10px;
             float: left;
         }
         .content-right{
             height: 400px;
-            width: 14%;
-            margin-left: 1%;
+            width: 220px;
+            margin-left: 10px;
             border: 1px solid;
-            margin-top: 1%;
+            margin-top: 10px;
             float: left;
         }
         .img1 {
@@ -62,10 +65,9 @@
         }
         .content-bottom{
             height: 100px;
-            width: 60%;
+            width: 910px;
             border: 1px solid;
-            margin-top: 1%;
-            margin-left: 20%;
+            margin-top: 10px;
             float: left;
             display: flex;
         }
@@ -79,6 +81,9 @@
         .lienket:hover{
             color: hotpink;
         }
+        .content{
+            box-sizing: border-box;
+        }
     </style>
 </head>
 
@@ -86,59 +91,62 @@
     <div class="banner">
         <span style="margin: auto;">Ảnh banner</span>
     </div>
-    <div class="content-left">
-        <a href="Xổ Số.mp3" target="_blank"><img src="1.jpg" alt="Lỗi ảnh" class="img1"></a>
-        <!-- thẻ style bên trong quan trọng hơn nên sẽ lấy ở style ở img1 trước rồi mới lấy thêm thuộc tính ở img bên ngoài -->
-        <ul>
-            <li>
-                Họ và tên: Lê Trung Kiên
-            </li>
-            <li>
-                Ngày sinh: 20/09/2001
-            </li>
-            <li>
-                Quê quán: Nhân Đòng- Bãi Sậy- Ân Thi- Hưng Yên
-            </li>
-            <li>
-                Email: <a href="mailto:kienad2001@gmail.com">kienad2001@gmail.com</a>
-            </li>
-            <li>
-                Điện Thoại: <a href="tel:0347239763">0347239763</a>
-            </li>
-        </ul>
-        <h3>
-            THƯ VIỆN ẢNH
-        </h3>
-        <div style="display: flex;">
-            <img src="1.jpg" alt="Lỗi ảnh" style="margin: auto;">
-            <img src="1.jpg" alt="Lỗi ảnh" style="margin: auto;">
-            <img src="1.jpg" alt="Lỗi ảnh" style="margin: auto;">
-            <img src="1.jpg" alt="Lỗi ảnh" style="margin: auto;">
-            <img src="1.jpg" alt="Lỗi ảnh" style="margin: auto;">
+    <div class="content">
+        <div class="content-left">
+            <a href="Xổ Số.mp3" target="_blank"><img src="1.jpg" alt="Lỗi ảnh" class="img1"></a>
+            <!-- thẻ style bên trong quan trọng hơn nên sẽ lấy ở style ở img1 trước rồi mới lấy thêm thuộc tính ở img bên ngoài -->
+            <ul>
+                <li>
+                    Họ và tên: Lê Trung Kiên
+                </li>
+                <li>
+                    Ngày sinh: 20/09/2001
+                </li>
+                <li>
+                    Quê quán: Nhân Đòng- Bãi Sậy- Ân Thi- Hưng Yên
+                </li>
+                <li>
+                    Email: <a href="mailto:kienad2001@gmail.com">kienad2001@gmail.com</a>
+                </li>
+                <li>
+                    Điện Thoại: <a href="tel:0347239763">0347239763</a>
+                </li>
+            </ul>
+            <h3>
+                THƯ VIỆN ẢNH
+            </h3>
+            <div style="display: flex;">
+                <img src="1.jpg" alt="Lỗi ảnh" style="margin: auto;">
+                <img src="1.jpg" alt="Lỗi ảnh" style="margin: auto;">
+                <img src="1.jpg" alt="Lỗi ảnh" style="margin: auto;">
+                <img src="1.jpg" alt="Lỗi ảnh" style="margin: auto;">
+                <img src="1.jpg" alt="Lỗi ảnh" style="margin: auto;">
+            </div>
+        </div>
+        <div class="content-right">
+            <div class="lienket">
+                <span style="margin: auto;font-size: 20px;">LIÊN KẾT</span>
+            </div>
+            <ul>
+                <li>
+                    <a href="1.jpg">Liên kết số 1</a>
+                </li>
+                <li>
+                    <a href="1.jpg">Liên kết số 2</a>
+                </li>
+                <li>
+                    <a href="1.jpg">Liên kết số 3</a>
+                </li>
+                <li>
+                    <a href="1.jpg">Liên kết số 4</a>
+                </li>
+                <li>
+                    <a href="1.jpg">Liên kết số 5</a>
+                </li>
+            </ul>
         </div>
     </div>
-    <div class="content-right">
-        <div class="lienket">
-            <span style="margin: auto;font-size: 20px;">LIÊN KẾT</span>
-        </div>
-        <ul>
-            <li>
-                <a href="1.jpg">Liên kết số 1</a>
-            </li>
-            <li>
-                <a href="1.jpg">Liên kết số 2</a>
-            </li>
-            <li>
-                <a href="1.jpg">Liên kết số 3</a>
-            </li>
-            <li>
-                <a href="1.jpg">Liên kết số 4</a>
-            </li>
-            <li>
-                <a href="1.jpg">Liên kết số 5</a>
-            </li>
-        </ul>
-    </div>
+    
     <div class="content-bottom">
         <span style="margin:auto">Bản quyền thuộc về <b>Lê Trung Kiên</b></span>
     </div>
