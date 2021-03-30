@@ -7,180 +7,205 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giới thiệu sản phẩm</title>
     <style>
-        .banner{
-            width: 60%;
+        * {
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 1000px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .banner {
+            width: 910px;
             height: 120px;
             border: 1px solid;
-            margin: auto;
             display: flex;
             position: relative;
+
         }
-        .content-left{
-            width: 45%;
+
+        .content-left {
+            width: 680px;
             height: 580px;
             border: 1px solid;
-            margin-top: 1%;
-            margin-left: 20%;
+            margin-top: 10px;
             float: left;
             position: relative;
         }
-        h3{
+
+        h3 {
             clear: left;
             color: rgb(243, 24, 24);
             margin-left: 3%;
         }
-        h3:hover{
+
+        h3:hover {
             color: green;
         }
-        ul{
+
+        ul {
             float: left;
             line-height: 35px;
         }
-        .ltk{
+
+        .ltk {
             width: 200px;
             height: 150px;
             float: left;
-            border-radius:5px;
+            border-radius: 5px;
             border: 1px solid rgb(0, 255, 106);
             margin-left: 5%;
         }
-        .ltk:hover{
+
+        .ltk:hover {
             border-color: rgb(240, 0, 0);
             border: solid;
         }
-        .lienket{
+
+        .lienket {
             background-color: rgb(115, 115, 223);
             color: white;
             width: 100%;
             height: 40px;
             display: flex;
         }
-        .lienket:hover{
+
+        .lienket:hover {
             background-color: grey;
             color: brown
         }
-        .content-bottom{
+
+        .footer {
             height: 100px;
-            width: 60%;
+            width: 910px;
             border: 1px solid;
-            margin-top: 1%;
-            margin-left: 20%;
+            margin-top: 10px;
             float: left;
             display: flex;
             position: relative;
         }
-        .quangcao{
+
+        .quangcao {
             background-color: rgb(115, 115, 223);
             color: white;
             width: 100%;
             height: 40px;
             display: flex;
         }
-        .quangcao:hover{
+
+        .quangcao:hover {
             background-color: grey;
             color: brown;
         }
-        .content-right{
+
+        .content-right {
             height: 580px;
-            width: 14%;
-            margin-left: 1%;
+            width: 220px;
+            margin-left: 10px;
             border: 1px solid;
-            margin-top: 1%;
+            margin-top: 10px;
             float: left;
         }
     </style>
 </head>
+
 <body>
     <div class="banner">
         <span style="margin: auto;"> Ảnh banner</span>
     </div>
-    <div class="content-left">
-        <h3>
-            DANH MỤC SẢN PHẨM
-        </h3>
-        <div style="clear: left;">
-            <a href="Xổ Số.mp3" target="_blank"><img src="1.jpg" alt="Lỗi ảnh" class="ltk"></a>
-            <ul>
-                <li>
-                    Tên sản phẩm: Đồ ăn nhanh
-                </li>
-                <li>
-                   Mã sản phẩm: 101191
-                </li>
-                <li>
-                    Giá bán: 1.000.000$
-                </li>
-                <li>
-                    Mô tả: Không có mô tả
-                </li>
-            </ul>
+    <div id="content">
+        <div class="content-left">
+            <h3>
+                DANH MỤC SẢN PHẨM
+            </h3>
+            <div style="clear: left;">
+                <a href="Xổ Số.mp3" target="_blank"><img src="1.jpg" alt="Lỗi ảnh" class="ltk"></a>
+                <ul>
+                    <li>
+                        Tên sản phẩm: Đồ ăn nhanh
+                    </li>
+                    <li>
+                        Mã sản phẩm: 101191
+                    </li>
+                    <li>
+                        Giá bán: 1.000.000$
+                    </li>
+                    <li>
+                        Mô tả: Không có mô tả
+                    </li>
+                </ul>
+            </div>
+            <div style="clear: left;">
+                <a href="Xổ Số.mp3" target="_blank"><img src="1.jpg" alt="Lỗi ảnh" class="ltk"></a>
+                <ul>
+                    <li>
+                        Tên sản phẩm: Đồ ăn nhanh
+                    </li>
+                    <li>
+                        Mã sản phẩm: 101191
+                    </li>
+                    <li>
+                        Giá bán: 1.000.000$
+                    </li>
+                    <li>
+                        Mô tả: Không có mô tả
+                    </li>
+                </ul>
+            </div>
+            <div style="clear: left;">
+                <a href="Xổ Số.mp3" target="_blank"><img src="1.jpg" alt="Lỗi ảnh" class="ltk"></a>
+                <ul>
+                    <li>
+                        Tên sản phẩm: Đồ ăn nhanh
+                    </li>
+                    <li>
+                        Mã sản phẩm: 101191
+                    </li>
+                    <li>
+                        Giá bán: 1.000.000$
+                    </li>
+                    <li>
+                        Mô tả: Không có mô tả
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div style="clear: left;">
-            <a href="Xổ Số.mp3" target="_blank"><img src="1.jpg" alt="Lỗi ảnh" class="ltk"></a>
-            <ul>
+        <div class="content-right">
+            <div class="lienket">
+                <span style="margin: auto;font-size: 20px;">LIÊN KẾT</span>
+            </div>
+            <ul style="line-height: 35px;">
                 <li>
-                    Tên sản phẩm: Đồ ăn nhanh
+                    <a href="1.jpg">Liên kết số 1</a>
                 </li>
                 <li>
-                   Mã sản phẩm: 101191
+                    <a href="1.jpg">Liên kết số 2</a>
                 </li>
                 <li>
-                    Giá bán: 1.000.000$
+                    <a href="1.jpg">Liên kết số 3</a>
                 </li>
                 <li>
-                    Mô tả: Không có mô tả
-                </li>
-            </ul>
-        </div>
-        <div style="clear: left;">
-            <a href="Xổ Số.mp3" target="_blank"><img src="1.jpg" alt="Lỗi ảnh" class="ltk"></a>
-            <ul>
-                <li>
-                    Tên sản phẩm: Đồ ăn nhanh
+                    <a href="1.jpg">Liên kết số 4</a>
                 </li>
                 <li>
-                   Mã sản phẩm: 101191
-                </li>
-                <li>
-                    Giá bán: 1.000.000$
-                </li>
-                <li>
-                    Mô tả: Không có mô tả
+                    <a href="1.jpg">Liên kết số 5</a>
                 </li>
             </ul>
+            <div class="quangcao">
+                <span style="margin: auto;font-size: 20px;">QUẢNG CÁO</span>
+            </div>
+            <div style="margin-top:4%;margin-left:2%; clear: left ;">
+                <img src="1.jpg" alt="Lỗi ảnh" width="200px" height="90px">
+                <img src="1.jpg" alt="Lỗi ảnh" width="200px" height="90px">
+                <img src="1.jpg" alt="Lỗi ảnh" width="200px" height="90px">
+            </div>
         </div>
     </div>
-    <div class="content-right">
-        <div class="lienket">
-            <span style="margin: auto;font-size: 20px;">LIÊN KẾT</span>
-        </div>
-        <ul style="line-height: 35px;">
-            <li>
-                <a href="1.jpg">Liên kết số 1</a>
-            </li>
-            <li>
-                <a href="1.jpg">Liên kết số 2</a>
-            </li>
-            <li>
-                <a href="1.jpg">Liên kết số 3</a>
-            </li>
-            <li>
-                <a href="1.jpg">Liên kết số 4</a>
-            </li>
-            <li>
-                <a href="1.jpg">Liên kết số 5</a>
-            </li>
-        </ul>
-        <div class="quangcao">
-            <span style="margin: auto;font-size: 20px;">QUẢNG CÁO</span>
-        </div>
-        <div style="margin-top:4%;margin-left:2%; clear: left ;">
-            <img src="1.jpg" alt="Lỗi ảnh" width="200px" height="90px">
-            <img src="1.jpg" alt="Lỗi ảnh" width="200px" height="90px">
-            <img src="1.jpg" alt="Lỗi ảnh" width="200px" height="90px">
-        </div>
-    </div>
-    <div class="content-bottom">
+
+    <div class="footer">
         <span style="margin:auto">Bản quyền thuộc về <b>Lê Trung Kiên</b></span>
     </div>
 </body>
