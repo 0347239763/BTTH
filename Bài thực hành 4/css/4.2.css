@@ -1,0 +1,43 @@
+#frame{
+    width: 960px;
+    height: 600px;   
+    border: 1px solid;
+    margin-left: auto;
+    margin-right: auto;
+}
+#content{
+    width: 685px;
+    height: 590px;
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+#relate{
+    width: 350px;
+    height: 590px;
+    float: left;
+}
+#relate img{
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+.opacity{
+    opacity: 60%;
+}
+#news{
+    width: 330px;
+    height: 300px;
+    margin-left: 5px;
+    background-color: rgb(202, 202, 202);
+    float: right;
+
+}
+#right{
+    width: 260px;
+    float: left;
+    height: 590px;
+    background-color: rgb(202, 202, 202);
+    margin-left: 5px;
+    margin-top: 5px;
+}
