@@ -1,0 +1,13 @@
+#nght{
+    border: 1px solid;
+    background-color: black;
+    color: green;
+    line-height: bold;
+    text-align: center;
+    width: 500px;
+    height: 100px;
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    text-decoration: uppercase;
+}

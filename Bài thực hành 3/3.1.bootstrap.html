@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.1.bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            color: aqua;
+            padding: 0px 20px;
+        }
+
+        #menu {
+            width: 1700px;
+            height: 50px;
+            position: -webkit-sticky;
+            position: sticky;
+            line-height: 30px;
+        }
+
+        #menu ul {
+
+            list-style-type: none;
+            background-color: black;
+        }
+#menu a {
+        color: white;
+        text-decoration: none;
+        font-size: 17px;
+    }
+        #menu>ul>li {
+            display: inline-block;
+            position: relative;
+            width: 200px;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .uli {
+            display: none;
+            position: absolute;
+        }
+
+        .uli>li {
+            position: relative;
+        }
+
+        .uli:hover {
+            display: block;
+        }
+
+        #menu ul li:hover {
+            background-color: chartreuse;
+        }
+
+        #menu ul li:hover .uli {
+            display: block;
+            position: absolute;
+        }
+
+        /* For mobile phones: */
+        [class*="col-"] {
+            width: 100%;
+            float: left;
+        }
+
+        @media only screen and (min-width: 600px) {
+
+            /* For tablets: */
+            .col-s-1 {
+                width: 8.33%;
+            }
+
+            .col-s-2 {
+                width: 16.66%;
+            }
+
+            .col-s-3 {
+                width: 25%;
+            }
+
+            .col-s-4 {
+                width: 33.33%;
+            }
+
+            .col-s-5 {
+                width: 41.66%;
+            }
+
+            .col-s-6 {
+                width: 50%;
+            }
+
+            .col-s-7 {
+                width: 58.33%;
+            }
+
+            .col-s-8 {
+                width: 66.66%;
+            }
+
+            .col-s-9 {
+                width: 75%;
+            }
+
+            .col-s-10 {
+                width: 83.33%;
+            }
+
+            .col-s-11 {
+                width: 91.66%;
+            }
+
+            .col-s-12 {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
+
+            /* For desktop: */
+            .col-1 {
+                width: 8.33%;
+            }
+
+            .col-2 {
+                width: 16.66%;
+            }
+
+            .col-3 {
+                width: 25%;
+            }
+
+            .col-4 {
+                width: 33.33%;
+            }
+
+            .col-5 {
+                width: 41.66%;
+            }
+
+            .col-6 {
+                width: 50%;
+            }
+
+            .col-7 {
+                width: 58.33%;
+            }
+
+            .col-8 {
+                width: 66.66%;
+            }
+
+            .col-9 {
+                width: 75%;
+            }
+
+            .col-10 {
+                width: 83.33%;
+            }
+
+            .col-11 {
+                width: 91.66%;
+            }
+
+            .col-12 {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div>
+            <span style="margin-left: 20px;">TRƯỜNG ĐẠI HỌC SƯ PHẠM KĨ THUẬT HƯNG YÊN</span>
+            <h1>KHOA CÔNG NGHỆ THÔNG TIN</h1>
+        </div>
+        <div id="menu">
+            <ul>
+                <li>
+                    <a href="#">Trang chủ</a>
+                </li>
+                <li>
+                    <a href="#">Giới thiệu</a>
+                </li>
+                <li>
+                    <a href="#">Bộ môn - Trung tâm</a>
+                    <ul class="uli">
+                        <li>
+                            <a href="#">BM Công Nghệ Phần Mềm</a>
+                        </li>
+                        <li>
+                            <a href="#">BM Kĩ Thuật Máy Tính</a>
+                        </li>
+                        <li>
+                            <a href="#">BM Mạng Máy Tính & Truyền Thông</a>
+                        </li>
+                        <li>
+                            <a href="#">Trung Tâm Trí Tuệ Nhân Tạo</a>
+                        </li>
+                        <li>
+                            <a href="#">Trung Tâm Phát Triển Phần Mềm</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Đào tạo</a>
+                    <ul class="uli">
+                        <li>
+                            <a href="#">Sau đại học</a>
+                        </li>
+                        <li>
+                            <a href="#">Đại học chính quy</a>
+                            <ul class="ltk1">
+                                <li>
+                                    <a href="#">Đi làm</a>
+                                </li>
+                                <li>
+                                    <a href="#"> Thất nghiệp</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Đại học liên thông</a>
+                        </li>
+                        <li>
+                            <a href="#"> Bồi dưỡng ngắn hạn</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"> Nghiên cứu khoa học</a>
+                </li>
+                <li>
+                    <a href="#">Tin tức</a>
+                </li>
+                <li>
+                    <a href="#"> Sự kiện</a>
+                </li>
+                <li>
+                    <a href="#"> Thông báo</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-9">
+
+            </div>
+            <div class="col-4">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5.3</title>
+    <link rel="stylesheet" href="css/5.3.css">
+</head>
+<body>
+    <div class="header">
+        Đăng ký khóa học lập trình web với asp.net 
+    </div>
+   
+    <table>
+        <tr>
+            <td>Họ tên :</td>
+            <td><input type="text" id="txt_hoten" value="" placeholder="Nhập họ tên" ></td>
+            <td id="err_hoten">*</td>
+        </tr>
+        <tr>
+            <td>Giới tính :</td>
+            <td class="gt">
+                <input type="radio" id="rdo_nam" name="gioitinh" value="nam">
+                <label for="male">Nam</label>
+                <input type="radio" id="rdo_nu" name="gender" value="nu">
+                <label for="female">Nữ</label>
+            </td>
+            <td>*</td>
+        </tr>
+        <tr>
+            <td>Ngày sinh :</td>
+            <td><input type="datetime-local" id="txt_ngaysinh" value="ngaysinh" ></td>
+            <td>*</td>
+        </tr>
+        <tr>
+            <td>Địa chỉ  :</td>
+            <td><input type="text" id="txt_diachi" value="" placeholder="Nhập địa chỉ" ></td>
+            <td>*</td>
+        </tr>
+        <tr>
+            <td>Email :</td>
+            <td><input type="email" id="txt_email" value="" placeholder="Nhập email"></td>
+            <td>*</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td style="text-align: left;" colspan="2"><button type="submit" onclick="DangKy()">Đăng ký</button></td>
+        </tr>
+    </table> 
+    <script src="js/5.3.js"></script>
+</body>
+</html>

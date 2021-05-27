@@ -1,0 +1,44 @@
+.silde {
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+.silde  img {
+    width: 100%;
+    height: 100%;
+}
+.btn-left {
+    position: absolute;
+    left: 30px;
+    top: 40%;
+    line-height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    font-size: 30px;
+    background-color: black;
+    opacity: 0.3;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-left:hover {
+    opacity: 1;
+}
+.btn-right:hover {
+    opacity: 1;
+}
+.btn-right {
+    text-align: center;
+    position: absolute;
+    right: 30px;
+    top: 40%;
+   line-height:  50px;
+    width: 50px;
+    border-radius: 50%;
+    font-size: 30px;
+    background-color: black;
+    opacity: 0.3;
+    color: white;
+    cursor: pointer;
+}
